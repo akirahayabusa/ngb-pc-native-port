@@ -44,7 +44,6 @@ void before_present(int64_t tick, bool may_hold);
 // after a miss every frame waits for its tick until 120 in a row would have made it. With no one-refresh deadline the
 // old at-once path is kept.
 bool present_before_tick(int64_t now);
-bool present_before_tick(int64_t now);
 
 // A refresh rate the clock can follow, as Windows and Direct3D 9 list modes in whole Hz: a whole multiple of ~60
 // (59/60/61, 119/120/121, 239/240/241...; 59.94 Hz modes are listed as 59 or 60). Which mode exclusive and borderless
